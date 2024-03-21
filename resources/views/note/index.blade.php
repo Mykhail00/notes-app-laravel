@@ -4,8 +4,8 @@
             New Note
         </a>
         <div class="notes">
-            <div class="note">
-                @foreach($notes as $note)
+            @foreach($notes as $note)
+                <div class="note">
                     <div class="note-body">
                         {{ Str::words($note->note, 30) }}
                     </div>
@@ -14,8 +14,8 @@
                         <a href="{{ route('note.edit', $note)}}" class="note-edit-button">Edit</a>
                         <button class="note-delete-button">Delete</button>
                     </div>
-                @endforeach
-            </div>
+                </div>
+            @endforeach
         </div>
     </div>
 </x-layout>

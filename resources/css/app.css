@@ -12,9 +12,10 @@
 }
 .new-note-btn {
     width: 200px;
+    border-radius: 8px;
     display: block;
     margin: 0 auto 20px;
-    background-color: #fff;
+    background-color: #73d77e;
     padding: 10px 32px;
     border: 1px solid #e0e0e0;
     font-size: 26px;

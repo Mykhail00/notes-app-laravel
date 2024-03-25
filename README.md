@@ -19,7 +19,10 @@ docker run --rm \
     composer install --ignore-platform-reqs
 ```
 
-3. Build and run containers via Sail 
+3. Build and run containers via Sail
+```bash
+./vendor/bin/sail down -v
+```
 ```bash
 ./vendor/bin/sail build --no-cache
 ```
@@ -32,7 +35,7 @@ docker run --rm \
 ./vendor/bin/sail artisan key:generate
 ```
 
-5. Execute migrations
+5. Execute migrations (repeat this command if the Connection refused error occurred)
 ```bash
 ./vendor/bin/sail artisan migrate 
 ```
@@ -48,7 +51,3 @@ docker run --rm \
 ## Usage:
 * go to http://localhost/register and register your account
 * go to  http://localhost:8025/ (Mailpit email testing server) and click on the verification link inside your email
-
-
-
-
